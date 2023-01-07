@@ -3,11 +3,13 @@ import type { Session } from 'next-auth';
 import { SessionProvider } from 'next-auth/react';
 import React from 'react';
 import superjson from 'superjson';
+import { ToastsProvider } from '@tih/ui';
 import { httpBatchLink } from '@trpc/client/links/httpBatchLink';
 import { loggerLink } from '@trpc/client/links/loggerLink';
 import { withTRPC } from '@trpc/next';
 
 import AppShell from '~/components/global/AppShell';
+import ProtectedContextProvider from '~/components/questions/protected/ProtectedContextProvider';
 
 import type { AppRouter } from '~/server/router';
 
@@ -19,9 +21,13 @@ const MyApp: AppType<{ session: Session | null }> = ({
 }) => {
   return (
     <SessionProvider session={session}>
-      <AppShell>
-        <Component {...pageProps} />
-      </AppShell>
+      <ToastsProvider>
+        <ProtectedContextProvider>
+          <AppShell>
+            <Component {...pageProps} />
+          </AppShell>
+        </ProtectedContextProvider>
+      </ToastsProvider>
     </SessionProvider>
   );
 };
@@ -53,13 +59,18 @@ export default withTRPC<AppRouter>({
         }),
         httpBatchLink({ url }),
       ],
+      /**
+       * @link https://tanstack.com/query/v4/docs/reference/QueryClient
+       */
+      queryClientConfig: {
+        defaultOptions: {
+          queries: {
+            refetchOnWindowFocus: false,
+          },
+        },
+      },
       transformer: superjson,
       url,
-      /**
-       * @link https://react-query.tanstack.com/reference/QueryClient
-       */
-      // queryClientConfig: { defaultOptions: { queries: { staleTime: 60 } } },
-
       // To use SSR properly you need to forward the client's headers to the server
       // headers: () => {
       //   if (ctx?.req) {

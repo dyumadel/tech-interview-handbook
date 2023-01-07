@@ -1,23 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
+const config = require('@tih/tailwind-config/tailwind.config.js');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx,md,mdx}'],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-      colors: {
-        primary: colors.purple,
-      },
-    },
-  },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/line-clamp'),
-    require('@tailwindcss/typography'),
-  ],
+  ...config,
+  // Extract styles from ui package instead of importing the ui package's generated CSS
+  // file as the importing approach runs into style ordering issues.
+  content: [...config.content, './../../packages/ui/src/**/*.{ts,tsx}'],
 };
