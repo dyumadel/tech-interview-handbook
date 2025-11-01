@@ -492,7 +492,7 @@ function GreatFrontEndSection() {
                 <div className="margin-vert--lg">
                   <a
                     className="button button--secondary button--lg"
-                    href="https://www.greatfrontend.com/prepare?fpr=yangshun&utm_source=techinterviewhandbook&utm_medium=referral&utm_content=homepage"
+                    href="https://www.greatfrontend.com/questions?fpr=yangshun&utm_source=techinterviewhandbook&utm_medium=referral&utm_content=homepage"
                     rel="noopener"
                     target="_blank"
                     onClick={() => {
@@ -801,7 +801,7 @@ function SponsorshipSection() {
             </div>
             <div className="margin-top--lg text--center">
               <a
-                className="button button--primary button--lg margin-right--md"
+                className="button button--primary button--lg margin-right--md margin-bottom--sm"
                 href="mailto:contact@techinterviewhandbook.org"
                 rel="noopener"
                 target="_blank">

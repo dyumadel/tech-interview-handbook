@@ -42,7 +42,7 @@ module.exports = {
         { label: 'Blog', to: 'blog', position: 'left' },
         {
           label: 'Grind 75',
-          href: 'https://www.techinterviewhandbook.org/grind75',
+          href: 'https://www.techinterviewhandbook.org/grind75/',
           position: 'left',
         },
         {
@@ -130,7 +130,7 @@ module.exports = {
             },
             {
               label: 'Discord',
-              href: 'https://discord.gg/usMqNaPczq',
+              href: 'https://discord.com/invite/usMqNaPczq',
             },
             {
               label: 'Telegram',
@@ -147,7 +147,7 @@ module.exports = {
           items: [
             {
               label: 'Grind 75',
-              href: 'https://www.techinterviewhandbook.org/grind75',
+              href: 'https://www.techinterviewhandbook.org/grind75/',
             },
             {
               label: 'Front End Interview Handbook',
@@ -195,6 +195,24 @@ module.exports = {
         },
         blog: {
           blogSidebarCount: 15,
+        },
+        sitemap: {
+          ignorePatterns: [
+            '/blog/',
+            '/blog/a-glimpse-into-front-end-interviews/',
+            '/blog/are-front-end-development-skills-enough-for-a-career/',
+            '/blog/facebook-career-questions-and-answers/',
+            '/blog/importance-of-communicating-effectively-as-engineers/',
+            '/blog/front-end-career-questions/',
+            '/blog/how-to-have-successful-software-engineering-internship/',
+            '/blog/tags/career/',
+            '/blog/tags/meta/',
+            '/blog/tags/facebook/',
+            '/algorithms/oop/',
+            '/search/',
+            '/resume-overview/',
+            '/blog/archive/',
+          ],
         },
       },
     ],

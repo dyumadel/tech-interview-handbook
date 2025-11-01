@@ -19,7 +19,7 @@ Before I share my resources and how to get a gentle start on this handbook, let 
 
 In most companies, the resume stage is the most important as it is the first stage that you will need to clear! For undergraduates, most hiring managers would only look at resumes that are within one page. The moment the second page is seen, they will not tend to consider. Hence, here are some tips that can help you to prepare your resume in under an hour to reduce your agony.
 
-1. Use a <strong>career hiring tool</strong> like [Kinobi](https://app.kinobi.asia/resume). Kinobi saves you time in having to fix alignments unlike word as this career tool formats everything for you. Furthermore, they help you to score your resume so that you know where you stand when applying for a job.
+1. Use a <strong>career hiring tool</strong> like [Kinobi](https://kinobi.tech/resume). Kinobi saves you time in having to fix alignments unlike word as this career tool formats everything for you. Furthermore, they help you to score your resume so that you know where you stand when applying for a job.
 
 2. As far as possible, <strong>attend career talks</strong> by your favorite companies because hiring managers are there and you can get some feedback about your resume. It is indeed helpful because you know what to look out for when applying.
 
@@ -51,7 +51,7 @@ I am about to recommend relevant sections to go in sequentially and how to syste
    - Now with virtual interviews, some companies tend to use HackerRank live to conduct whiteboard interviews. Prepare a pen and paper beside you as you work along. Prepare to remote desktop protocol (RDP) into your computer to show step-by-step workings.
    - Do not blurt out the solution straightaway as interviewers can tell that you memorize.
 
-4. Last but not least for algorithms heavy interviews, you might really want to save your time looking at [Grind 75](https://techinterviewhandbook.org/grind75). It's a useful curated source of questions to note how much you can prepare for your interview.
+4. Last but not least for algorithms heavy interviews, you might really want to save your time looking at [Grind 75](https://www.techinterviewhandbook.org/grind75/). It's a useful curated source of questions to note how much you can prepare for your interview.
 
 5. Always be prepared for even system design questions! You will never know what comes your way and this is where your projects come in and how much of good practices you apply in them and what do you learn. The [System Design Primer](https://github.com/donnemartin/system-design-primer) is a good start.
 

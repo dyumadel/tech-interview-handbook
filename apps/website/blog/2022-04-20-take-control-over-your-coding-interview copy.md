@@ -4,7 +4,7 @@ slug: take-control-over-your-coding-interview
 author: Zhenghao He
 author_title: Senior Software Engineer at Instacart, ex-Amazon
 author_url: https://twitter.com/he_zhenghao
-author_image_url: https://pbs.twimg.com/profile_images/1489749168767660032/M_us3Mu2_400x400.jpg
+author_image_url: /img/authors/zhenghao.jpg
 tags: [interview]
 ---
 
@@ -21,10 +21,6 @@ purchase quantity                                  price per unit
 ```
 
 <!--truncate-->
-
-<head>
-  <link rel="canonical" href="https://www.zhenghao.io/posts/take-control-coding-interview" />
-</head>
 
 The task the interviewer asks you to do is to write out a function that takes the amount of the times being purchased as the input and output the price per unit according the table. So if the input is 5, the function returns 5, and if the input is 6, the function returns 4... you get the idea.
 
